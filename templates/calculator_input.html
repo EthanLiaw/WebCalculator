@@ -1,0 +1,39 @@
+<html>
+<title>Ethan's Calculator</title>
+<!--1<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='input_heart_disease.css') }}">-->
+
+<h1 class="patient-info">Make Simple Arithmetic Calculations</h1>
+<div class="input">
+    <form class="form" #f="ngForm" action="{{url_for('calculate')}}" method='POST'>
+        <div class="first-block">
+
+            <div class="age-div">
+                <input class="age" name="input1">
+                <label for="age">Input 1</label>
+                </input>
+            </div>
+
+            <div class="gender-div">
+                <input class="gender" name="input2">
+                <label for="gender">Input 2</label>
+                </input>
+            </div>
+
+            <div class="chest_pain-div">
+                <label for="chest_pain">Operator</label><br>
+                <input type="radio" id="add" name="operator" value="add">
+                <label for="add">Add</label><br>
+                <input type="radio" id="subtract" name="operator" value="subtract">
+                <label for="subtract">Subtract</label><br>
+                <input type="radio" id="multiply" name="operator" value="multiply">
+                <label for="multiply">Multiply</label><br>
+                <input type="radio" id="divide" name="operator" value="divide">
+                <label for="divide">Divide</label><br>
+                </input>
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    </body>
+
+</html>
