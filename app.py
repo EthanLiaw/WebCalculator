@@ -2,8 +2,7 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+
 
 @app.route("/")
 def landing_page(name=None):
@@ -38,3 +37,6 @@ def multiplication(x, y):
 
 def division(x, y):
     return x / y
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
