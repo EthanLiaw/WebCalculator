@@ -1,6 +1,4 @@
-
-
-MAINTAINER Ethan Liaw "ethanliaw@eaton.com"
+FROM registry.access.redhat.com/ubi8/ubi:8.1
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
